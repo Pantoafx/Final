@@ -37,7 +37,12 @@ def main():
     toped = './images/logotoped.png'
     sidebar_logo = alas
     main_body_logo = alas
-    st.logo(sidebar_logo, icon_image=main_body_logo)
+    
+    # Tampilkan logo di sidebar
+    st.sidebar.image(sidebar_logo, use_column_width=True)
+    
+    # Tampilkan logo di bagian utama
+    st.image(main_body_logo, use_column_width=True)
     
     col11, col12 = st.columns(2)
     col11.image(toped, use_column_width=True)
