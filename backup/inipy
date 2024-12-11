@@ -1,0 +1,24 @@
+import streamlit as st
+import pandas as pd
+from PIL import Image
+#Load Data set
+
+abot = './images/logo.png'
+abot1 = './images/logo.png'
+sidebar_logo = abot 
+main_body_logo = abot1
+st.logo(sidebar_logo, icon_image=main_body_logo)
+st.sidebar.write("Note : U H M adalah sebuah perguruan tinggi swasta yang fokus pada bidang informatika, komputer, manajemen dan bisnis berbasis teknologi informasi, serta hukum dan ilmu sosial")
+import streamlit as st
+
+# Menampilkan link "Universitas Handayani Makassar" dengan ukuran font yang lebih besar
+import streamlit as st
+
+# Menampilkan link "Universitas Handayani Makassar" tanpa garis bawah dan dengan ukuran font yang lebih besar
+st.sidebar.markdown(
+    '<a href="https://handayani.ac.id/" style="font-size:15px; text-decoration:none;">Universitas Handayani Makassar</a>', 
+    unsafe_allow_html=True
+)
+
+
+
