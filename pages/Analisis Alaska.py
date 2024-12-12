@@ -34,9 +34,10 @@ df = pd.read_csv('DataAlaska.csv')
 def main():
     # Menampilkan logo dan gambar
     alas = './images/alaska.png'
+    alas1 = './images/alaska.png'
     toped = './images/logotoped.png'
     sidebar_logo = alas
-    main_body_logo = alas
+    main_body_logo = alas1
     st.logo(sidebar_logo, icon_image=main_body_logo)
     
     col11, col12 = st.columns(2)
