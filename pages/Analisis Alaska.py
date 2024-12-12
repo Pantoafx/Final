@@ -34,8 +34,15 @@ def main():
     alas = "static/images/alaska.png"
     toped = "static/images/logotoped.png"
 
-    st.sidebar.image(alas, use_column_width=True)
-    st.image(toped, use_column_width=True)
+    try:
+        st.sidebar.image(alas, use_container_width=True)
+    except Exception as e:
+        st.sidebar.error("Tidak dapat memuat gambar Alaska: " + str(e))
+
+    try:
+        st.image(toped, use_container_width=True)
+    except Exception as e:
+        st.error("Tidak dapat memuat gambar Tokopedia: " + str(e))
 
     # Judul halaman
     st.markdown("<h1 style='text-align: center; color: #50C878;'>Analisis Tipe Barang & Ulasan Alaska</h1>", unsafe_allow_html=True)
@@ -137,5 +144,4 @@ def main():
         else:
             st.warning("Toko ini memiliki feedback kurang baik berdasarkan prediksi model.")
 
-if __name__ == '__main__':
-    main()
+if __name__ == '__main
