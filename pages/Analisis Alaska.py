@@ -35,10 +35,10 @@ def main():
     # Menampilkan logo dan gambar
     alas = './images/alaska.png'
     toped = './images/logotoped.png'
-     sidebar_logo = alas
+    sidebar_logo = alas
     main_body_logo = alas
     # Sidebar
-     st.logo(sidebar_logo, icon_image=main_body_logo)
+    st.logo(sidebar_logo, icon_image=main_body_logo)
 
     # Header halaman utama
     st.markdown("<h1 style='text-align: center; color: #50C878;'>Analisis Tipe Barang & Ulasan Alaska</h1>", unsafe_allow_html=True)
