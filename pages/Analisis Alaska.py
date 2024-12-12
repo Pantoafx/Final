@@ -144,4 +144,5 @@ def main():
         else:
             st.warning("Toko ini memiliki feedback kurang baik berdasarkan prediksi model.")
 
-if __name__ == '__main
+if __name__ == '__main':
+    main()
