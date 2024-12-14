@@ -33,8 +33,8 @@ df = pd.read_csv('DataAlaska.csv')
 # Fungsi utama halaman
 def main():
     # Menampilkan logo dan gambar
-    alas = './images/alaska.png'
-    toped = './images/logotoped.png'
+    alas = 'images/alaska.png'
+    toped = 'images/logotoped.png'
 
     # Gambar di sidebar
     st.sidebar.image(alas, use_column_width=True)
