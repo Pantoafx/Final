@@ -10,3 +10,5 @@ streamlit
 pandas
 Sastrawi
 scikit-learn
+plotly
+
