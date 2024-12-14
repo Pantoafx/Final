@@ -12,3 +12,4 @@ Sastrawi
 scikit-learn
 plotly
 nltk
+regex
