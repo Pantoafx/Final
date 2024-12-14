@@ -11,4 +11,4 @@ pandas
 Sastrawi
 scikit-learn
 plotly
-
+nltk
