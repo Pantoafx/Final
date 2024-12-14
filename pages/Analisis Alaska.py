@@ -32,7 +32,14 @@ df = pd.read_csv('DataAlaska.csv')
 
 # Fungsi utama halaman
 def main():
-
+ # Logo dan Gambar
+    sen = './images/sent.png'
+    sen1 = './images/sent.png'
+    toped = './images/logotoped.png'
+    lokam = './images/logo.png'
+    sidebar_logo = sen
+    main_body_logo = sen1
+    st.logo(sidebar_logo, icon_image=main_body_logo)
     # Sidebar
     
     st.markdown("<h1 style='text-align: center; color: #50C878;'>Analisis Tipe Barang & Ulasan Alaska</h1>", unsafe_allow_html=True)
