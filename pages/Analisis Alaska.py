@@ -35,10 +35,13 @@ def main():
     # Menampilkan logo dan gambar
     alas = './images/alaska.png'
     toped = './images/logotoped.png'
-    sidebar_logo = alas
-    main_body_logo = alas
-    st.logo(sidebar_logo, icon_image=main_body_logo)
+
+    # Gambar di sidebar
+    st.sidebar.image(alas, use_column_width=True)
     
+    # Gambar di halaman utama
+    st.image(alas, use_column_width=True)
+
     col11, col12 = st.columns(2)
     col11.image(toped, use_column_width=True)
 
